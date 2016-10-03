@@ -57,8 +57,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="ObjectListView, Version=2.7.0.26561, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="ObjectListView">
       <HintPath>..\ObjectListView-LibraryOnly\ObjectListView\bin\Debug\ObjectListView.dll</HintPath>
     </Reference>
     <Reference Include="System" />
