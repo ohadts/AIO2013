@@ -17,6 +17,7 @@ Your user must have an administrator rights on the remote pc for best functional
 - 6 slots of commonly used prefixes that can be configured.
 - Tabbed interface by tasks category.
 - text area with black background and (mostly) white text for outputing the results (mimic console).
+
 ##### Networking tab
 - Send 4 ping.
 - Open cmd and send ping -t to host.
