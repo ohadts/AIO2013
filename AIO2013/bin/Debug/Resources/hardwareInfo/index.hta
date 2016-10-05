@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<TITLE>Hardware Information</TITLE>
+	<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<META name="GENERATOR" content="MSHTML 6.00.2800.1264">
+	<META http-equiv="MSThemeCompatible" content="Yes">
+	<HTA:APPLICATION
+		WINDOWSTATE="normal"
+		SYSMENU="yes"
+		SINGLEINSTANCE="no"
+		SHOWINTASKBAR="yes"
+		SELECTION="yes"
+		SCROLLFLAT="no"
+		SCROLL="no"
+		NAVIGABLE="yes"
+		MINIMIZEBUTTON="yes"
+		MAXIMIZEBUTTON="yes"
+		INNERBORDER="yes"
+		CONTEXTMENU="no"
+		CAPTION="yes"
+		BORDERSTYLE="normal"
+		BORDER="thick"
+		ID="objTestHTA"
+		APPLICATIONNAME="HardwareInfo"
+		ICON="HardwareInfo.ico"></HTA:APPLICATION>
+	<LINK href="HardwareInfo.css" type="text/css" rel="stylesheet">
+<SCRIPT language="VBScript" src="HardwareInfo.vbs">
+</SCRIPT>
+<SCRIPT language="VBScript">
+Sub Window_onLoad
+    arrCommands = Split(objTestHTA.commandLine, chr(34))
+    For i = 3 to (Ubound(arrCommands) - 1) Step 2
+        Document.title = "Hardware Information For " + arrCommands(i)
+		SetHostName(arrCommands(i))
+    Next
+End Sub
+</SCRIPT>
+
+</SCRIPT>
+</HEAD>
+<BODY>
+	<DIV id="divControls">
+		<TABLE id="tblControls" border="1" width="100%">
+			<TBODY>
+				<TR>
+					<TD><A href="#" onclick="ShowSystemInformation()"><STRONG>System information</STRONG></A></TD>
+					<TD><A href="#" onclick="ShowBaseboardInfo()">Baseboard</A></TD>
+					<TD><A href="#" onclick="ShowBatteryInfo()">Battery</A></TD>
+					<TD><A href="#" onclick="ShowBIOSInfo()">BIOS</A></TD>
+					<TD><A href="#" onclick="ShowCacheMemoryInfo()">Cache memory</A></TD>
+				</TR>
+				<TR>
+					<TD><A href="#" onclick="ShowComputerBusInfo()">Computer bus</A></TD>
+					<TD><A href="#" onclick="ShowDesktopMonitorInfo()">Desktop monitor</A></TD>
+					<TD><A href="#" onclick="ShowDeviceMemoryAddressInfo()">Device memory address</A></TD>
+					<TD><A href="#" onclick="ShowDMAChannelInfo()">DMA channel</A></TD>
+					<TD><A href="#" onclick="ShowFanInfo()">Fan</A></TD>
+				</TR>
+				<TR>
+					<TD><A href="#" onclick="ShowIRQSettingsInfo()">IRQ settings</A></TD>
+					<TD><A href="#" onclick="ShowKeyboardInfo()">Keyboard</A></TD>
+					<TD><A href="#" onclick="ShowPhysicalMemoryConfigurations()">Memory configurations</A></TD>
+					<TD><A href="#" onclick="ShowMemoryDevicesInfo()">Memory devices</A></TD>
+					<TD><A href="#" onclick="ShowModemInfo()">Modem</A></TD>
+				</TR>
+				<TR>
+					<TD><A href="#" onclick="ShowOnboardDevicesInfo()">Onboard devices</A></TD>
+					<TD><A href="#" onclick="ShowParallelPortInfo()">Parallel ports</A></TD>
+					<TD><A href="#" onclick="ShowPCMCIAInfo()">PCMCIA</A></TD>
+					<TD><A href="#" onclick="ShowPhysicalMemoryInfo()">Physical memory</A></TD>
+					<TD><A href="#" onclick="ShowPnPDevicesInfo()">PnP devices</A></TD>
+				</TR>
+				<TR>
+					<TD><A href="#" onclick="ShowPnpSignedDriversInfo()">PnP signed drivers</A></TD>
+					<TD><A href="#" onclick="ShowPointingDevicesInfo()">Pointing devices</A></TD>
+					<TD><A href="#" onclick="ShowPortConnectorInfo()">Port connector</A></TD>
+					<TD><A href="#" onclick="ShowProcessorInfo()">Processor</A></TD>
+					<TD><A href="#" onclick="ShowSerialPortConfigurations()">Serial port config</A></TD>
+				</TR>
+				<TR>
+					<TD><A href="#" onclick="ShowSerialPortInfo()">Serial ports</A></TD>
+					<TD><A href="#" onclick="ShowSoundCardInfo()">Sound card</A></TD>
+					<TD><A href="#" onclick="ShowSystemSlotInfo()">System slot</A></TD>
+					<TD><A href="#" onclick="ShowVideoControllerInfo()">Video controller</A></TD>
+					<TD><A href="#" onclick="ShowVideoResolutionsInfo()">Video resolutions</A></TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+	</DIV>
+	<P id="pOutput"></P>
+
+	<H1 id="headOutput"></H1>
+
+	<DIV id="divOutput"></DIV>
+	<DIV id="divFooter">
+		
+	</DIV>
+</BODY>
+</HTML>

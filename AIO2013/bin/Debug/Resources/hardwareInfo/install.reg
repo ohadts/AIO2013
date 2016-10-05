@@ -1,0 +1,13 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\.wsits]
+@="WSITS file"
+
+[HKEY_CLASSES_ROOT\WSITS file]
+@="Compiled HTML application"
+
+[HKEY_CLASSES_ROOT\WSITS file\DefaultIcon]
+@="itss.dll,0"
+
+[HKEY_CLASSES_ROOT\WSITS file\shell\open\command]
+@="mshta.exe ms-its:%1::/index.hta"

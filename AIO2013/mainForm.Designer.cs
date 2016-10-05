@@ -187,7 +187,7 @@
             this.CommunicationTab.Padding = new System.Windows.Forms.Padding(3);
             this.CommunicationTab.Size = new System.Drawing.Size(551, 133);
             this.CommunicationTab.TabIndex = 0;
-            this.CommunicationTab.Text = "Communication";
+            this.CommunicationTab.Text = "Networking";
             this.CommunicationTab.UseVisualStyleBackColor = true;
             // 
             // longPeriodPing

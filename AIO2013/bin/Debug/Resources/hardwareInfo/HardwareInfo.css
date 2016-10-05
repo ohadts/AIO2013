@@ -1,0 +1,100 @@
+BODY
+{
+	color: 				#555753;
+	font-family:    	georgia;
+	font-size:      	12pt/20pt;
+	background: 		ivory url("wrinkls.jpg") repeat;
+	margin: 			0px;
+	padding: 			5px;
+}
+
+BUTTON
+{
+	background-color:   ivory;
+	width:              200px;
+	margin:             0px;
+}
+
+#headOutput
+{
+	font: 				italic normal 150% georgia;
+	letter-spacing: 	1px;
+	margin-bottom: 		0px;
+	color: 				#7D775C;
+}
+
+#divOutput
+{
+	border: 			2px inset;
+	overflow: 			scroll;
+	width: 				100%;
+	height: 			expression(parentElement.clientHeight - offsetTop - 25);
+	background:         ivory repeat;
+}
+
+H1
+{
+	font: 				italic normal 150% georgia;
+	letter-spacing: 	1px;
+	margin-bottom: 		0px;
+	color: 				#7D775C;
+}
+
+H2
+{
+	font: 				italic normal 125% georgia;
+	letter-spacing: 	1px;
+	margin-bottom: 		0px;
+	color: 				#7D775C;
+}
+
+H3
+{
+	font: 				italic normal 110% georgia;
+	letter-spacing: 	1px;
+	margin-bottom: 		0px;
+	color: 				#7D775C;
+}
+
+#creator
+{
+	font-size: 			10pt;
+	margin: 			0px
+}
+
+.tblOutput
+{
+	table-layout: 		fixed;
+	width: 				100%;
+}
+
+.tblOutput TH
+{
+	background-color:   #99CC33;
+}
+
+.tblOutput TD
+{
+	background-color:   #00FF99;
+	padding:            2px 5px 2px 5px;
+}
+
+#pOutput
+{
+	margin-top:         0px;
+	margin-bottom:      0px;
+}
+
+#tblControls A
+{
+	width:              100%;
+	text-decoration: 	none;
+	color:              #7D775C;
+}
+
+#tblControls A:hover
+{
+	background-color:   #99CC33;
+	text-decoration: 	none;
+	color:              white;
+}

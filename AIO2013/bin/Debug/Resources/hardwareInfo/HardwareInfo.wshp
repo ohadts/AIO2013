@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wwwSharp_HTA_project>
+	<Options>
+		<Output>HardwareInfo.wsits</Output>
+	</Options>
+	<Files>
+		<File>index.hta</File>
+		<File>HardwareInfo.vbs</File>
+		<File>HardwareInfo.css</File>
+		<File>HardwareInfo.ico</File>
+		<File>wrinkls.jpg</File>
+	</Files>
+</wwwSharp_HTA_project>
