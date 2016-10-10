@@ -418,7 +418,7 @@ namespace AIO2013.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/ohadts/AIO2013/master/github/whats_new.txt")]
         public string whatsNewUrl {
             get {
                 return ((string)(this["whatsNewUrl"]));
@@ -430,7 +430,7 @@ namespace AIO2013.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://github.com/ohadts/AIO2013/raw/master/github/AIO2013_latest.zip")]
         public string latestVerUrl {
             get {
                 return ((string)(this["latestVerUrl"]));
@@ -442,7 +442,7 @@ namespace AIO2013.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/ohadts/AIO2013/master/github/version.txt")]
         public string versionChkUrl {
             get {
                 return ((string)(this["versionChkUrl"]));

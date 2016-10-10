@@ -102,13 +102,13 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="whatsNewUrl" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">https://raw.githubusercontent.com/ohadts/AIO2013/master/github/whats_new.txt</Value>
     </Setting>
     <Setting Name="latestVerUrl" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">https://github.com/ohadts/AIO2013/raw/master/github/AIO2013_latest.zip</Value>
     </Setting>
     <Setting Name="versionChkUrl" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">https://raw.githubusercontent.com/ohadts/AIO2013/master/github/version.txt</Value>
     </Setting>
   </Settings>
 </SettingsFile>

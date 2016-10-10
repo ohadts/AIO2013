@@ -55,7 +55,7 @@ namespace AIO2013
             {
                 try
                 {
-                    argss.Result = new WebClient().DownloadString("http://hfnt152/aio2013/versions.txt");
+                    argss.Result = new WebClient().DownloadString(Properties.Settings.Default.versionChkUrl);
 
                 }
                 catch (Exception ex)
