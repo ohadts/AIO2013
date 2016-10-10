@@ -29,7 +29,7 @@ namespace AIO2013
             {
                 try
                 {
-                    argss.Result = new WebClient().DownloadString("http://hfnt152/aio2013/versions.txt");
+                    argss.Result = new WebClient().DownloadString(Properties.Settings.Default.versionChkUrl);
 
                 }
                 catch (Exception ex)
@@ -75,7 +75,7 @@ namespace AIO2013
         {
             try
             {
-                string wtsNewStr = "http://hfnt152/aio2013/whatsnew.txt";
+                string wtsNewStr = Properties.Settings.Default.whatsNewUrl;
                 Process wtsNewProcess = new Process();
                 wtsNewProcess.StartInfo.FileName = wtsNewStr;
 
@@ -93,7 +93,7 @@ namespace AIO2013
         {
             try
             {
-                string latestStr = "http://hfnt152/aio2013/aio2013-latest.zip";
+                string latestStr = Properties.Settings.Default.latestVerUrl;
                 Process latestProcess = new Process();
                 latestProcess.StartInfo.FileName = latestStr;
 

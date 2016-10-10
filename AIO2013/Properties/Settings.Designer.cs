@@ -415,5 +415,41 @@ namespace AIO2013.Properties {
                 this["psToolsPath"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string whatsNewUrl {
+            get {
+                return ((string)(this["whatsNewUrl"]));
+            }
+            set {
+                this["whatsNewUrl"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string latestVerUrl {
+            get {
+                return ((string)(this["latestVerUrl"]));
+            }
+            set {
+                this["latestVerUrl"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string versionChkUrl {
+            get {
+                return ((string)(this["versionChkUrl"]));
+            }
+            set {
+                this["versionChkUrl"] = value;
+            }
+        }
     }
 }
